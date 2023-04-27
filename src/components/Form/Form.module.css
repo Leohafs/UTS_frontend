@@ -1,0 +1,128 @@
+/* Small Screen */
+.container {
+    margin: 1rem;
+    color: black;
+    
+    }
+  
+    .Form {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .Form__right {
+      margin-bottom: 2rem;
+    }
+  
+    .Form__title {
+      margin-bottom: 1rem;
+      font-size: 2.44rem;
+      font-family: cursive;
+      text-align: center;
+      color: #08D640;
+    }
+  
+    .Form__input {
+      justify-content: center;
+      padding: 0.8rem 1rem;
+      border: solid 3px #08511b;
+      border-radius: 10px;
+      width: 92%;
+    }
+
+    @media (max-width: 767px) {
+      .Form__select {
+        margin: 0 auto;
+      }
+      .Form__image {
+        display: none;
+      }
+    }
+    .Form__select{
+      justify-content: center;
+      padding: 0.8rem 1rem;
+      border: solid 3px #6B765E;
+      border-radius: 10px;
+      font-family: cursive;
+      display: block;
+    }
+    
+    .Form__button {
+      justify-content: center;
+      padding: 0.8rem 2rem;
+      border: none;
+      border-radius: 10px;
+      background-color: #08D640;
+      color: white;
+      width: 100%;
+      margin-top: 1rem;
+      box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5); 
+      font-family: cursive; 
+    }
+  
+    .Form__button:hover {
+      background-color: #86fda6;
+      color: black;
+      font-family: cursive;
+    }
+    
+    .Form__image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 25px;
+      box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+    }
+
+    .Form__group {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1rem;
+      align-items: center;
+      text-align: center;
+
+    }
+  
+    .Form__text {
+      margin: 1rem;
+      font-family: cursive;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #08D640;
+    }
+
+    
+  
+   
+    /* Medium Screen */
+    @media (min-width: 768px) {
+      /*
+       * Nothing TODO Here.
+       * We dont change style Hero. 
+       */
+    }
+    
+    /* Large Screen */
+    @media (min-width: 992px) {
+      .container {
+        max-width: 1200px;
+        margin: 3rem auto;
+        
+      }
+    
+      .Form {
+        margin: 0 1rem;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+      }
+    
+      .Form__right {
+        flex-basis: 40%;
+      }
+    
+      .Form__left {
+        flex-basis: 60%;
+      }
+  }

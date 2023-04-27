@@ -1,0 +1,60 @@
+/* Small Screen */
+.container {
+    margin: 1rem;
+    color: black;
+  }
+
+  .provins {
+    margin: 5rem 0;
+    text-align: center;
+  }
+  
+  .provins__title {
+    margin-bottom: 1rem;
+    font-size: 2.44rem;
+    font-family: cursive;
+    color: #08D640;
+  }
+  .provins__p {
+    color: #083b16;
+    font-family: cursive;
+  }
+  
+  .provin__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .provinsi__kasus{
+    border: solid 2px black;
+    border-radius: 1rem 1rem 0 0 ;
+    padding: 1rem;
+    font-family: cursive;
+    width: 100%;
+    color: #08D640;
+  }
+
+  .provinsi__border{
+    border: solid 2px;
+    border-radius: 1rem 1rem 0 0 ;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+  }
+  /* Medium Screen */
+  @media (min-width: 768px) {
+    .provin__container {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  
+  /* Large Screen */
+  @media (min-width: 992px) {
+    .container {
+      max-width: 1200px;
+      margin: 3rem auto;
+    } 
+  }

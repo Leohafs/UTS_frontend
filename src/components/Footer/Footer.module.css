@@ -1,0 +1,52 @@
+/* Small Screen */
+.container {
+    background-color: #08D640;
+    padding: 1rem;
+    color: white;
+    font-family: cursive;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar__brand {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.navbar__title{
+    margin: 0;
+}
+
+.navbar__list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+}
+
+
+
+/* Medium Screen */
+@media (min-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar__brand {
+        margin: 0;
+    }
+
+    .navbar__list {
+        flex-direction: row;
+    }
+
+    .navbar__item {
+        margin: 0 1rem;
+    }
+}
