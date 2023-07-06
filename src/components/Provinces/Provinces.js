@@ -1,14 +1,27 @@
 import Province from "../Province/Province";
 import styles from "./Provinces.module.css"
-import data from "../../utils/constants/provinces";
+// import data from "../../utils/constants/provinces";
+// import { useState } from "react";
 
-function Provinces(){
-    const provins = data;
+function Provinces(props){
+    const {title,provins} = props;
+    
+
+    // function tambah(){
+    //     const provin ={
+    //     kota: "Jakarta",
+    //     kasus: 0,
+    //     sembuh: 0,
+    //     meninggal: 0,
+    //     dirawat: 0,
+    //     }
+    //     setProvins([...provins, provin]);
+    // }
 
     return (
         <div className={styles.container}>
             <section className={styles.provins}>
-                <h2 className={styles.provins__title}>Provinsi</h2>
+                <h2 className={styles.provins__title}>{title}</h2>
                 <p className={styles.provins__p}>Data Covid Berdasarkan Provinsi</p>
                 <div className={styles.provin__container}>
                 <table className={styles.provinsi__border} >
@@ -21,12 +34,11 @@ function Provinces(){
                             </tr>
                             {
                                 provins.map(function(provin){
-                                return <Province provin={provin} />
+                                return <Province key={provin.kota || provin.name} provin={provin} />
                             })}
-                            
                         </table>
-                
                 </div>
+                {/* <button onClick={tambah}>add</button> */}
             </section>
         </div>
     )

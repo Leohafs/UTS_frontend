@@ -1,3 +1,4 @@
+import Button from "../ui/button";
 import styles from "./Hello.module.css"
 
 function Hello() {
@@ -12,7 +13,7 @@ function Hello() {
               Commodi, eveniet aliquid! Dolore vel recusandae impedit consectetur minus perspiciatis reprehenderit nisi facilis,
               alias similique eligendi odio porro nulla, consequuntur,
               necessitatibus perferendis!</p>
-          <button className={styles.hello__button}>Vaccine</button>
+          <Button size="lg">Vaccine</Button>
         </div>
         <div className="hello__right">
           <img className={styles.hello__image}
