@@ -3,15 +3,14 @@ import styles from "./index.module.css"
 import Region from "../sitRegion";
 import axios from "axios";
 import { useEffect, useState } from "react";
+import ENDPOINT from "../../utils/constants/endpoint";
 
 function Regions(props){
-    const URL = "https://covid-fe-2023.vercel.app/api/global.json"
-    // const globals = props.globals;
 
     const [reg, setReg] = useState([])
 
     async function getRegions() {
-        const response = await axios(URL);
+        const response = await axios(ENDPOINT.GLOBAL);
         setReg(response.data.regions)
     }
 

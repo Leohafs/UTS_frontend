@@ -4,15 +4,16 @@ import { useState } from "react";
 import Globals from "../../components/Globals/Globals";
 import Hello from "../../components/Hello";
 import Provinces from "../../components/Provinces/Provinces";
+import ENDPOINT from "../../utils/constants/endpoint";
 
 
 function Indonesia() {
-const URL = "https://covid-fe-2023.vercel.app/api/indonesia.json"
+// const URL = "https://covid-fe-2023.vercel.app/api/indonesia.json"
     const [ind,setInd] = useState([]);
     const [regions,setRegions] = useState([]);
     
     async function getIndonesia() {
-        const response = await axios(URL);
+        const response = await axios(ENDPOINT.INDONESIA);
         // const data = await response.json();
         setInd(response.data.indonesia);
         setRegions(response.data.regions)
