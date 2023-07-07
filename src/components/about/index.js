@@ -5,7 +5,7 @@ function About(){
         <>
         <h1 className={styles.judul}>CARA EFEKTIF MENCEGAH INFEKSI COVID-19</h1>
         <div className={styles.global}>
-            <p className={styles.global__tittle}>Mencuci Tangan dengan Air Sabun atau Alkohol</p>
+            <p className={styles.global__tittle}>Mencuci Tangan Dengan Air Sabun atau Alkohol</p>
         </div>
         <div className={styles.global}>
             <p className={styles.global__tittle}>Mengurangi Kontak dengan Orang Sakit</p>
